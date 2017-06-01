@@ -22,6 +22,7 @@
   "homepage": "https://github.com/leonard7e/wingedshoe#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
     "gulp-typescript": "^3.1.7",
     "typescript": "^2.3.4"
   }
