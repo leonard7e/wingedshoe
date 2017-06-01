@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title> Titel -- TODO </title>
+  </head>
+  <body>
+    <header>
+      {{ block "header" . }}
+      <h1>header. Navigation here</h1>
+      {{ end }}
+      <nav> {{ partial "header_nav" . }} </nav>
+    </header>
+    <main>
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+    <footer>
+      {{partial "footer" . }}
+      <nav> {{ partial "footer_nav" . }} </nav>
+    </footer>
+  </body>
+</html>
