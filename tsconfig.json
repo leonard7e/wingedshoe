@@ -1,6 +1,6 @@
 {
     "files": [
-        "src/typescript/wingedshoe.ts"
+        "src/typescript/wingedshoe.tsx"
     ],
     "compilerOptions": {
         "noImplicitAny": true,
