@@ -1,4 +1,16 @@
-{{ define "main " }}
-  {{ range .Data.Pages }}
-  {{ end }}
+{{ define "main" }}
+  <section>
+    <article class="">
+      <header> <h3 id="Title"> {{ .Title }} </h3> </header>
+      {{ .Content }}
+    </article>
+  </section>
+  <section>
+    {{ range .Data.Pages }}
+    <article class="">
+      <header> <h4> <a href="{{.URL}}"> {{ .Title }} </a> </h4> </header>
+      {{ .Summary }}
+    </article>
+    {{ end }}
+  </section>
 {{ end }}

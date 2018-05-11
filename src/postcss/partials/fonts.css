@@ -1,0 +1,22 @@
+/* Font Families
+ */
+body h1,
+body h2 {
+  font-family: 'Josefin Slab', serif;
+}
+
+body,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: 'Jura', sans-serif;
+}
+
+
+/* Font Sizes
+
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.25rem; }
+h3 { font-size: 1rem; }
+*/

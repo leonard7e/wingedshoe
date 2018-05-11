@@ -1,0 +1,23 @@
+
+/* colors */
+#MainHeader {
+  background-color: hsl(120, 50%, 30%);
+}
+
+body > main {
+  background-color: hsl(30, 25%, 80%);
+}
+
+#MainNav {
+  background-color: hsl(120, 50%, 30%);
+}
+
+html {
+  background-color: hsl(180, 50%, 50%);
+}
+
+#Hamburger,
+#MainHeader a,
+#MainNav a {
+  color: lightblue;
+}

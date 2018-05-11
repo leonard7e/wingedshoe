@@ -1,0 +1,28 @@
+body, html, main {
+  padding: 0;
+  margin: 0;
+}
+
+:not(main) a {
+  text-decoration: none;
+}
+
+main p:last-of-type {
+  margin-bottom: 0;
+}
+
+:not(main) h1,
+:not(main) h2,
+:not(main) h3,
+:not(main) h4,
+:not(main) h5,
+:not(main) h6{
+  margin: 0;
+}
+
+nav li,
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

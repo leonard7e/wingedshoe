@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <script src="./js-lib/jquery.min.js" charset="utf-8" > </script>
-    <script src="./js-gen/bundle.js" charset="utf-8" > </script>
+    <!-- Dependencies -->
+    <script src={{"/js-lib/jquery.min.js" | relURL}} charset="utf-8" > </script>
+    <script src={{"/js-gen/bundle.js" | relURL}} charset="utf-8" > </script>
+    <link rel="stylesheet" href={{"/css-gen/wshoe.css" | relURL}}>
+    <!-- HTML Meta Data -->
     <meta charset="utf-8">
-    <title> Titel -- TODO </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=1">
+    <!-- Title -->
+    <title> {{ .Site.Title }} </title>
   </head>
   <body>
-    <header>
-      {{ block "header" . }}
-      <h1>header. Navigation here</h1>
-      {{ end }}
-      <nav> {{ partial "header_nav" . }} </nav>
-    </header>
+    {{ partial "header" . }}
+    {{ partial "main_nav" . }}
     <main>
-      {{ block "main" . }}
-      {{ end }}
+      {{ block "main" . }} {{ end }}
     </main>
-    <footer>
-      {{partial "footer" . }}
-      <nav> {{ partial "footer_nav" . }} </nav>
-    </footer>
+    {{ partial "footer" . }}
   </body>
 </html>

@@ -1,0 +1,44 @@
+/* arrangement */
+
+
+body {
+    width: 75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+
+
+body > main,
+body > header{
+    position: relative;
+}
+
+
+
+/* sizes */
+body
+body > header,
+body > main
+{
+    width: 100%;
+}
+
+
+/* Navigation. */
+
+#FooterNav li
+{
+    display: inline-block;
+}
+
+#MainNav
+{
+    width: 75rem;
+    display: block;
+}
+
+#MainNav li {
+    display: inline-flex;
+}

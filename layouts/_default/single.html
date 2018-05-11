@@ -1,3 +1,9 @@
 {{ define "main" }}
-  {{ .Content }}
+<section>
+  <article class="">
+    <header> <h3 id="Title">{{ .Title }}</h3> </header>
+    {{ .Content }}
+    <footer>© Leonard Siebeneicher</footer>
+  </article>
+</section>
 {{ end }}

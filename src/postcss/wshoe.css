@@ -1,1 +1,14 @@
 /*  just nothing */
+
+/*
+font-family: 'Source Code Pro', monospace;
+font-family: 'Josefin Slab', serif;
+font-family: 'Jura', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Jura:400,700|Source+Code+Pro');
+@import "partials/override_defaults.css";
+@import "partials/page_layout.css";
+@import "partials/page_areas.css";
+@import "partials/content.css";
+@import "partials/fonts.css";

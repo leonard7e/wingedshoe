@@ -26,18 +26,31 @@ var postcss = require('gulp-postcss');
 
 gulp.task('postcss', function () {
     var sourcemaps = require('gulp-sourcemaps');
-    return gulp.src('./src/postcss/*.css')
+    return gulp.src('./src/postcss/wshoe.css')
         .pipe(sourcemaps.init())
-        .pipe(postcss([ require('precss'), require('autoprefixer') ]))
+        .pipe(postcss([
+          require('postcss-import'),
+          // require('postcss-nested'),
+          require('postcss-color-function'),
+          require('postcss-simple-vars'),
+          // require('postcss-calc'),
+          // require('postcss-conditionals'),
+          // require('postcss-each'),
+          // require('postcss-for'),
+          // require('postcss-sass-extend'),
+          // require('postcss-mixins'),
+          // require('postcss-sprites'),
+          require('autoprefixer')
+        ]))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./static/css'));
+        .pipe(gulp.dest('./static/css-gen'));
 });
 
 var livereload = require('gulp-livereload');
 gulp.task('watch', function () {
   livereload.listen();
-  gulp.watch('./src/typescript/*.tsx', ['ts']);
-  gulp.watch('./src/postcss/*.css', ['postcss']);
+  gulp.watch(['./src/typescript/*.tsx','./src/typescript/**/*.tsx'], ['ts']);
+  gulp.watch(['./src/postcss/*.css', './src/postcss/**/*.css'], ['postcss']);
 })
 
 // Task – Default
