@@ -1,23 +1,36 @@
 
 /* colors */
 #MainHeader {
-  background-color: hsl(120, 50%, 30%);
-}
-
-body > main {
-  background-color: hsl(30, 25%, 80%);
+  background-color: hsl(218, 33%, 40%);
 }
 
 #MainNav {
-  background-color: hsl(120, 50%, 30%);
+	background-color: hsl(30, 15%, 30%);
+}
+
+body > main {
+  background-color: hsl(30, 15%, 90%);
 }
 
 html {
-  background-color: hsl(180, 50%, 50%);
+  background-color: hsl(172, 39%, 62%);
 }
 
 #Hamburger,
 #MainHeader a,
 #MainNav a {
   color: lightblue;
+}
+
+/* Shadows */
+body {
+	box-shadow: 1 1ex 1ex hsla(120, 100%, 0%, 0.5);
+}
+
+#MainHeader,
+body > main {
+	box-shadow: 0 1ex 1ex hsla(120, 100%, 0%, 0.5);
+}
+#MainNav {
+	text-shadow: 0 2px 1px hsla(120, 100%, 0%, 0.75);
 }

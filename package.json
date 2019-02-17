@@ -42,8 +42,7 @@
     "postcss-simple-vars": "^4.0.0",
     "postcss-sprites": "^4.2.1",
     "precss": "^1.4.0",
-    "ts-loader": "^2.1.0",
-    "typescript": "^2.1.6"
+    "ts-loader": "^2.1.0"
   },
   "dependencies": {
     "gulp-livereload": "^3.8.1",

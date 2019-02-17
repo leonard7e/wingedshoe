@@ -1,32 +1,57 @@
-/* arrangement */
-
-
-body {
-    width: 75rem;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
+/* Page Geometry.
+*/
+body > header
+{
+    width: 25rem;
 }
 
+body,
+body > main
+{
+    width: 75rem;
+}
 
+#FooterNav,
+#MainNav,
+body > main,
+body > header {
+	padding-right: 1em;
+	padding-left: 1em;
+}
 
 body > main,
-body > header{
-    position: relative;
+body > header,
+#FooterNav {
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
-
-
-/* sizes */
+/* sizes
 body
 body > header,
 body > main
 {
     width: 100%;
 }
+*/
 
 
-/* Navigation. */
+/* Page element flowing. */
+
+body > main,
+body > header{
+    position: relative;
+}
+
+body,
+body > main,
+body > header {
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+}
+
+/* Navigation Flowing. */
 
 #FooterNav li
 {

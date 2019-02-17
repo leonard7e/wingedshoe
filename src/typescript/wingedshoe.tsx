@@ -1,3 +1,6 @@
-$(document).ready(function () {
-    console.log("es geht");
-});
+new Vue({
+  el: '#app',
+  data: {
+    message: 'Vue läuft.'
+  }
+})
