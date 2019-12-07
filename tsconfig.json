@@ -1,9 +1,11 @@
 {
     "files": [
-        "src/typescript/wingedshoe.tsx"
+        "src/typescript/index.ts"
     ],
     "compilerOptions": {
-        "noImplicitAny": true,
-        "target": "es5"
+        "target": "es5",
+        "strict": true,
+        "module": "es2015",
+        "moduleResolution": "node"
     }
 }
