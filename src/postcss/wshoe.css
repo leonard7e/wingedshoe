@@ -10,3 +10,5 @@ font-family: 'Jura', sans-serif;
 @import "partials/page_areas.css";
 @import "partials/content.css";
 @import "partials/fonts.css";
+@import "partials/footer_nav.css";
+@import "partials/main_nav.css";

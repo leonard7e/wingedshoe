@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+<head>
     <!-- Dependencies -->
     <script src={{"/js-gen/bundle.js" | relURL}} charset="utf-8" > </script>
     <link rel="stylesheet" href={{"/css-gen/wshoe.css" | relURL}}>
@@ -9,13 +9,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=1">
     <!-- Title -->
     <title> {{ .Site.Title }} </title>
-  </head>
-  <body>
-    {{ partial "header" . }}
-    {{ partial "main_nav" . }}
+</head>
+<body>
+    <header id="MainHeader">
+        {{ partial "header" . }}
+    </header>
     <main>
-      {{ block "main" . }} {{ end }}
+        <nav id="MainNavigation">
+            {{ partial "main_nav" . }}
+        </nav>
+        <div id="Container">
+            {{ block "main" . }}
+            {{ end }}
+        </div>
     </main>
-    {{ partial "footer" . }}
-  </body>
+    <footer id="MainFooter">
+        <nav id="FooterNavigation">
+            {{ partial "footer_nav" . }}
+        </nav>
+    </footer>
+</body>
 </html>

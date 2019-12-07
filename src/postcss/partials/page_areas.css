@@ -1,69 +1,23 @@
 /* Page Geometry.
 */
-body > header
+
+main
 {
-    width: 25rem;
+    max-width: 60rem;
 }
 
-body,
-body > main
-{
-    width: 75rem;
+main,
+#MainHeader,
+#FooterNavigation {
+    margin: 1em;
 }
 
-#FooterNav,
-#MainNav,
-body > main,
-body > header {
-	padding-right: 1em;
-	padding-left: 1em;
-}
-
-body > main,
-body > header,
-#FooterNav {
-	padding-top: 1em;
-	padding-bottom: 1em;
-}
-
-/* sizes
-body
-body > header,
-body > main
-{
-    width: 100%;
-}
+/* Toplevel padding.
 */
-
-
-/* Page element flowing. */
-
-body > main,
-body > header{
-    position: relative;
+#MainNavigation {
+    padding: 0.2em 1em;
 }
 
-body,
-body > main,
-body > header {
-	display: flex;
-	flex-direction: column;
-	justify-content:flex-start;
-}
-
-/* Navigation Flowing. */
-
-#FooterNav li
-{
-    display: inline-block;
-}
-
-#MainNav
-{
-    width: 75rem;
-    display: block;
-}
-
-#MainNav li {
-    display: inline-flex;
+#Container {
+    padding: 1em;
 }
