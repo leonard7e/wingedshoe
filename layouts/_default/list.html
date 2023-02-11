@@ -7,7 +7,7 @@
 
 {{ range .Data.Pages }}
 <article class="listed_subpage">
-    <header> <h4> <a href="{{.URL}}"> {{ .Title }} </a> </h4> </header>
+    <header> <h4> <a href="{{ .Permalink }}"> {{ .Title }} {{ .Date | time.Format ":date_long"  }} </a> </h4> </header>
     {{ .Summary }}
 </article>
 {{ end }}
